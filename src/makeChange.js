@@ -1,7 +1,6 @@
 'use strict'
 
 export default function makeChange({price, amountGiven}) {
-};
 
 // make change Logic
   let quarters = 0;
