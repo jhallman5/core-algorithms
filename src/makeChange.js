@@ -4,7 +4,7 @@ export default function makeChange({price, amountGiven}) {
 };
 
 // make change Logic
-let quarters = 0;
+  let quarters = 0;
   let dimes = 0;
   let nickels = 0;
   let pennies = 0;
