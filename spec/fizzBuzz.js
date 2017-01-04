@@ -89,7 +89,7 @@ describe('fizzBuzz()', () => {
       "Fizz",
       79,
       "Buzz",
-      "Fizz",
+      "Fizz"
       82,
       83,
       "Fizz",
