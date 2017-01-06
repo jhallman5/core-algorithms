@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import fizzBuzz from '../src/fizzBuzz'
 
-describe('fizzBuzz', () => {
+describe('fizzBuzz()', () => {
 
   it('should be a function', () => {
     expect(fizzBuzz).to.be.a('function')
@@ -89,7 +89,7 @@ describe('fizzBuzz', () => {
       "Fizz",
       79,
       "Buzz",
-      "Fizz",
+      "Fizz"
       82,
       83,
       "Fizz",
