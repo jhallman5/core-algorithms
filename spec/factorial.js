@@ -6,16 +6,16 @@ import factorial from '../src/factorial'
 // multiple test cases
 // reference to chai library
 
-describe('factorial', () => {
-  context('when given a number', () => {
-    it('should return the factorial', () => {
-      expect(factorial(5)).to.equal(120)
-    })
-  });
-
-  context('when given a negetive number', () =>{
-    it('should retrn an undefined', () => {
-      expect(factorial(-5)).to.equal(undefined)
+describe('factorial', function(){
+  context('when given a number', function(){
+    it('should retrn factorial', function() {
+      expect(factorial(5)).to.be(120)
     })
   })
-});
+
+  context('when given a negetive number', function(){
+    it('should retrn an undefined', function(){
+      expect(factorial(-5)).to.be(undefined)
+    })
+  })
+})
