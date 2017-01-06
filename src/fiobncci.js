@@ -1,4 +1,4 @@
-function fiobnacci ( number ) {
+function fibonacci ( number ) {
   var fibArray = [0, 1]
   if ( number <= 0 ) return undefined;
   if ( number === 1 ) return fibArray = [0]
