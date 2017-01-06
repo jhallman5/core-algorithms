@@ -1,4 +1,3 @@
-export {mergeSort};
 
 function makeArrayOfArrays(array) {
   return array.map(function(member){
@@ -35,6 +34,7 @@ function sortArrays(arrayA, arrayB) {
 
 //actual merge sort
 function mergeSort(array) {
+ if(typeof(array) === "string") return undefined
   let arrayOfArrays = makeArrayOfArrays(array);
   //console.log('MS: start', arrayOfArrays)
   while(arrayOfArrays.length > 1){
@@ -52,3 +52,5 @@ function mergeSort(array) {
 }
 
 //console.log('FINAL RESLT', mergeSort([10,30,40,3,2,4,6,7]))
+
+module.exports = {mergeSort};
