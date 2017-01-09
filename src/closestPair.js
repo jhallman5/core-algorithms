@@ -1,5 +1,5 @@
 export default function closestPair(array) {
-  let currerntObject = {distance: 99};
+  let currerntObject = {distance: 99999};
   for ( let i = 0; i < array.length; i++ ) {
     let pair1 = array[i]
     for (let j = i + 1; j < array.length; j++) {
@@ -7,7 +7,7 @@ export default function closestPair(array) {
       let axisX = Math.abs(pair1[0] - pair2[0])
       let axisY = Math.abs(pair1[1] - pair2[1])
       let pair = [pair1, pair2]
-      let distance = axisX + axisY
+      let distance = Math.sqrt((Math.pow(axisX, 2)) + (Math.pow(axisY, 2)))
       if (distance < currerntObject.distance) {
         currerntObject = {pair: [pair1, pair2], distance: distance }
       }
